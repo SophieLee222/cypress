@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:mobile": "cypress run --config-file cypress.config.mobile.js",
+    "test:mobile:headed": "cypress open --config-file cypress.config.mobile.js",
+    "test:laptop": "cypress run --config-file cypress.config.laptop.js",
+    "test:laptop:headed": "cypress open --config-file cypress.config.laptop.js"
   },
   "keywords": [],
   "author": "",
